@@ -12,7 +12,7 @@ const config: Config = {
       'base-color': colors.gray[800],
       'accent-color': colors.orange[600],
       'header-bg-color': colors.slate[900],
-      'header-text-color': colors.gray[50],
+      'header-text-color': colors.gray[200],
     },
   },
   plugins: [],
