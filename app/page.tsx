@@ -1,3 +1,7 @@
 export default function Home() {
-  return <main>Hello, Keepcoders!</main>;
+  return (
+    <main>
+      <h1>Hello, Keepcoders!</h1>
+    </main>
+  );
 }
