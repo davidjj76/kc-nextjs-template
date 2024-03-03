@@ -7,12 +7,13 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    borderColor: { DEFAULT: colors.gray[200] },
     colors: {
       base: colors.gray[800],
       accent: colors.orange[600],
-      header: colors.slate[900],
+      'header-bg': colors.slate[900],
+      'header-text': colors.gray[50],
     },
-    borderColor: { DEFAULT: colors.gray[200] },
   },
   plugins: [],
 };
