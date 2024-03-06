@@ -4,18 +4,14 @@ const prisma = new PrismaClient();
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-export function getCourses(select: Prisma.CourseSelect) {
-  return prisma.course.findMany({ select });
+export function getCourses() {
+  return prisma.course.findMany();
 }
 
-export async function getCourseBySlug(
-  slug: string,
-  select: Prisma.CourseSelect,
-) {
+export async function getCourseBySlug(slug: string) {
   await sleep(3000);
   return prisma.course.findUniqueOrThrow({
     where: { slug },
-    select,
   });
 }
 
